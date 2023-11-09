@@ -52,7 +52,7 @@ public class Giocattoli {
        
         String descrizione = "";
         descrizione+= "Nome: "+ this.getNome();
-        descrizione+= "Id: " + this.getId();
+        descrizione+= "Codice identificativo: " + this.getCodiceGiocattolo();
         descrizione+= "Prezzo: "+ this.getPrezzo() +" euro";
         descrizione+= "Eta' consigliata: " + this.getEta();
         return descrizione ;
