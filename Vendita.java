@@ -25,6 +25,7 @@ public class Vendita {
     public Cliente getCliente() {
         return cliente;
     }
+
     public int getQuantita(){
         return quantita;
     }
@@ -34,11 +35,18 @@ public class Vendita {
     public LocalDateTime getDataAcquisto() {
         return dataAcquisto;
     }
+
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
-    public void setGiocattolo(Giocattoli giocattolo) {
-        this.giocattolo = giocattolo;
+    public void setAcquisto(Giocattoli acquisto) {
+        this.acquisto = acquisto;
+    }
+    public LocalDateTime getDataAcquisto() {
+        return dataAcquisto;
+    }
+    public void setDataAcquisto(LocalDateTime dataAcquisto) {
+        this.dataAcquisto = dataAcquisto;
     }
     public void setQuantita(int quantita){
         this.quantita = quantita;
