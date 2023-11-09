@@ -8,8 +8,7 @@ public class Inventario {
     public void addItem(Giocattoli giocattolo){
         giocattoli_disponibili.add(giocattolo);
     }
-
-    
-
-
+    public void addCustomer(Cliente cliente){
+        
+    }
 }

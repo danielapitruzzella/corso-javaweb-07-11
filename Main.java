@@ -11,6 +11,8 @@ public class Main{
         
         List <Vendita> vendite = new ArrayList<>();
 
+        Inventario.addItem(new Giocattoli("giocatto", null, 0, 0))
+
 
 
     }
