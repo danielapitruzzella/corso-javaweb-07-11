@@ -59,5 +59,13 @@ public class Cliente {
         this.email = email;
     }
     
+    @Override
+    public String toString() {
+        String descrizione = "";
+        descrizione += "Cliente: " + this.getNome() + " " + this.getCognome() + 
+        "email: " + this.getEmail() + "codice: " + this.getCodiceCliente();
+
+        return descrizione;
+    }
 
 }
