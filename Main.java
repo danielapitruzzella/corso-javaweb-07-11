@@ -11,7 +11,13 @@ public class Main{
         
         List <Vendita> vendite = new ArrayList<>();
 
+<<<<<<< Updated upstream
        // Inventario.addItem(new Giocattoli("giocatto", null, 0, 0))
+=======
+        //Inventario.addItem(new Giocattoli("giocatto", null, 0, 0))
+
+        System.out.println("HELLO WORLD");
+>>>>>>> Stashed changes
 
         System.out.println();
 
