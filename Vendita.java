@@ -1,33 +1,37 @@
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Vendita extends RegistroVendite {
     
     private Cliente cliente;
-    private Giocattoli giocattolo;
+    private Giocattoli acquisto;
+    private LocalDateTime dataAcquisto;
 
-    public Vendita(Cliente c, Giocattoli g){
+    public Vendita(Cliente c, Giocattoli g, LocalDateTime data){
         this.cliente=c;
-        this.giocattolo=g;
+        this.acquisto=g;
+        this.dataAcquisto=data;
     }
 
     public Cliente getCliente() {
         return cliente;
     }
-    public List<Giocattoli> getGiocattoli() {
-        return giocattoli;
-    }
+    
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
-    public void setGiocattolo(Giocattoli giocattolo) {
-        this.giocattolo = giocattolo;
+    public void setAcquisto(Giocattoli acquisto) {
+        this.acquisto = acquisto;
+    }
+    public LocalDateTime getDataAcquisto() {
+        return dataAcquisto;
+    }
+    public void setDataAcquisto(LocalDateTime dataAcquisto) {
+        this.dataAcquisto = dataAcquisto;
     }
 
 
-    Giocattoli g1 = new Giocattoli("Giocattolo1", "12", 30.50, 012);
-    Cliente c1 = new Cliente(null, null, null);
-    List <Giocattoli> giocattoli = new ArrayList<>();
     
     public void registraAcquisto(){
         
